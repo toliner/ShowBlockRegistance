@@ -22,8 +22,7 @@ class ShowBlockResistanceModCore {
     @Mod.EventHandler
     fun preinit(event: FMLPreInitializationEvent) {
         loadMeta()
-        //register()
-        //Registry.preinit(event)
+        register()
         /*
         if(event.side.isClient) {
             texture()
@@ -33,7 +32,7 @@ class ShowBlockResistanceModCore {
 
     @Mod.EventHandler
     fun init(event: FMLInitializationEvent) {
-        //recipe()
+        recipe()
     }
 
     @Mod.EventHandler
