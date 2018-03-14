@@ -35,8 +35,13 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    embed
+    compile.extendsFrom(embed)
+}
+
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    embed "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 
 minecraft {
